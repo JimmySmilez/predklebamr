@@ -1,14 +1,33 @@
 # PredKlebAMR: Predictive Model for Antimicrobial Resistance in *Klebsiella pneumoniae* using Artificial Intelligence and Machine Learning
 
 ## Background
+*Klebsiella*, a gram-negative bacterium, belonging to the family Enterobacteriaceae and order Enterobacterales was listed on the 2024 World Health Organization (WHO) bacterial priority pathogen list (BPPL) as a critical priority pathogen which requires urgent intervention. The third-generation cephalosporin-resistant and carbapenem-resistant Enterobacterales are listed on the BPPL because of their potential to have, inherit, and transfer resistance genes, the severity of infections and/or diseases they cause, and the significance of the global health burden caused by these infections/diseases especially in low to medium income communities (LMIC) (WHO Bacterial Priority Pathogens List, 2024).
 
 ## Problem
+The rise of antimicrobial resistance (AMR) in *Klebsiella pneumoniae*, especially to meropenem which is similar to carbapenem, poses a critical threat to public health globally. Researchers and healthcare practitioners are constantly on the move to combat AMR in infectious diseases especially those that have been listed as critical by WHO and are in the group of pathogens tagged ESKAPE (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa, and Enterobacter species).
 
-## Aims & Objectives
+## Aims 
+Using datasets available online, the goal of this project is to identify genomic features such as specific AMR genes, mutations, or gene combinations that are predictive of meropenem resistance. For any dataset to be eligible, it must provide the genomic sequences of *K. pneumoniae* isolates along with their resistance phenotypes to meropenem.
+
+## Objectives
+By applying machine learning and statistical analysis, we aim to develop a predictive model that can accurately classify isolates as resistant or susceptible based on their genomic profiles. 
 
 ## Workflow (Methodology)
+-	Download appropriate datasets and do data analysis
+-	Decide on the models to use, train at least three (3) models and select the best fit
+-	Deploy the model and check that it is working
+-	Upload the work to GitHub and make it available publicly on other repositories
+-	Write a report for publication
 
 ## Outcome
+This model could support early detection of resistant strains and inform treatment strategies and surveillance efforts.
+
+## Tools for this project
+-	Programming language: Python
+-	Anaconda libraries 
+-	Writing tools: Jupyter notebook or Sypder or VScode, 
+-	Command line interface: Bash or PowerShell on Windows
+-	GitHub account
 
 ## Scripts for Analysis
 
