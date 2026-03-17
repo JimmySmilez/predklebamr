@@ -16,9 +16,12 @@ PredKlebAMR is a machine-learning-powered pipeline designed to predict carbapene
 - **Reproducible Environment:** Conda-based dependency management ensures the tool runs identically on any system.
 
 ## 📊Data Source and Training
-The underlying model was trained using a high-quality dataset of *Klebsiella pneumoniae* isolates retrieved from the Bacterial and Viral Bioinformatics Resource Center (BV-BRC). 
+The underlying model was trained using a high-quality dataset of *Klebsiella pneumoniae* isolates retrieved from the Bacterial and Viral Bioinformatics Resource Center (BV-BRC).
+- **Isolates:** Selected based on matched WGS data and AST results for Meropenem. Details of these selected isolates can be found here [Metadata](https://github.com/omicscodeathon/klebamrmod/blob/bd94105f426780a09c5a1eaa4d7954c5a0c7631a/data/metadata_final_6000.csv).
+- **Features:** The model analyzes 117 genomic markers including MLST, acquired carbapenemases (blaKPC, blaNDM, etc.), and porin alterations (OmpK35/36), as annotated by `Kleborate`.
 
-## Workflow (Methodology)
+## 🧾Workflow (Methodology)
+The detailed description of the entire process of data acquisition, training and testing of the model is presented in the workflow below:
 ![image alt](https://github.com/omicscodeathon/klebamrmod/blob/main/workflow/klebAMRmod%20Workflow.png?raw=true)
 ## Outcome
 This model could support early detection of resistant strains and inform treatment strategies and surveillance efforts.
