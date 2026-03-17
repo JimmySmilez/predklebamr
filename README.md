@@ -15,8 +15,8 @@ PredKlebAMR is a machine-learning-powered pipeline designed to predict carbapene
 - **Interactive Dashboard:** A Shiny-based web interface for visualizing MLST, resistance genes, and OMP mutations.
 - **Reproducible Environment:** Conda-based dependency management ensures the tool runs identically on any system.
 
-## Objectives
-By applying machine learning and statistical analysis, we aim to develop a predictive model that can accurately classify isolates as resistant or susceptible based on their genomic profiles. 
+## 📊Data Source and Training
+The underlying model was trained using a high-quality dataset of *Klebsiella pneumoniae* isolates retrieved from the Bacterial and Viral Bioinformatics Resource Center (BV-BRC). 
 
 ## Workflow (Methodology)
 ![image alt](https://github.com/omicscodeathon/klebamrmod/blob/main/workflow/klebAMRmod%20Workflow.png?raw=true)
