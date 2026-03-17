@@ -23,8 +23,9 @@ The underlying model was trained using a high-quality dataset of *Klebsiella pne
 ## 🧾Workflow (Methodology)
 The detailed description of the entire process of data acquisition, training and testing of the model is presented in the workflow below:
 ![image alt](https://github.com/omicscodeathon/klebamrmod/blob/main/workflow/klebAMRmod%20Workflow.png?raw=true)
-## Outcome
-This model could support early detection of resistant strains and inform treatment strategies and surveillance efforts.
+
+## 🚀Installation and Setup
+### 🔗Live Demo:  
 
 ## Tools for this project
 -	Programming language: Python, R and Bash
