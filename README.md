@@ -74,7 +74,7 @@ This project is open-source and available under the [MIT License](https://github
 For questions, contributions, or collaborations, please open an [issue](https://github.com/omicscodeathon/klebamrmod/issues) or contact the project lead at [Abiola Babajide](https://github.com/3880132)
 
 ## 👨‍👩‍👧‍👦Team
-1. [Abiola Babajide](https://github.com/3880132) - **Microbiology | Data Science** - *Writer (Manuscript, GitHub), AI & ML, SQL, PowerBI* - **University of the Western Cape, South Africa**
+1. [Abiola Babajide](https://github.com/3880132) - **Microbiology | Data Science** - *Writer (Manuscript, GitHub), AL & ML enthusiast* - **University of the Western Cape, South Africa**
 2. [James Mordecai](https://github.com/JimmySmilez) - **Microbiology | Bioinformatics** - *Microbial Bioinformatician, Bash scripter, Statistical (R) analyst, Bio-illustrator, Writer* - **King Fahd University of Petroleum and Minerals (KFUPM), Saudi Arabia**
 3. [Jamilu Garba](https://github.com/Jamilu192) - **Microbiology | Vetinary Microbiology** - *Writer (Manuscript)* - **Usmanu Danfodiyo University, Nigeria**
 4. [Kweku Gyasi](https://github.com/KwekuFohGyasi) - **Biochemistry** - **Kwame Nkrumah University of Science and Technology, Ghana**
