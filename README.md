@@ -17,7 +17,7 @@ PredKlebAMR is a machine-learning-powered pipeline designed to predict carbapene
 
 ## 📊Data Source and Training
 The underlying model was trained using a high-quality dataset of *Klebsiella pneumoniae* isolates retrieved from the Bacterial and Viral Bioinformatics Resource Center (BV-BRC).
-- **Isolates:** Selected based on matched WGS data and AST results for Meropenem. Details of these selected isolates can be found here [Metadata](https://github.com/omicscodeathon/klebamrmod/blob/bd94105f426780a09c5a1eaa4d7954c5a0c7631a/data/metadata_final_6000.csv).
+- **Isolates:** Selected based on matched WGS data and AST results for Meropenem. Details of these selected isolates and how they were selected can be found here [Metadata](https://github.com/omicscodeathon/klebamrmod/blob/bd94105f426780a09c5a1eaa4d7954c5a0c7631a/data/metadata_final_6000.csv) [Data Acquisition Workflow](https://github.com/omicscodeathon/klebamrmod/blob/f723ec6439fbd17c92fb20077ffa4082eefc7063/data/Data%20Acquisition%20Flowchart.png).
 - **Features:** The model analyzes 117 genomic markers including MLST, acquired carbapenemases (blaKPC, blaNDM, etc.), and porin alterations (OmpK35/36), as annotated by `Kleborate`. [Kleborate Workflow](https://github.com/omicscodeathon/klebamrmod/blob/30483d0a2ae947793bbf7ccf191873f02ffdcf70/data/Galaxy-Workflow-PredKlebAMR_Kleborate_Workflow_v1.ga)
 
 ## 🧾Workflow (Methodology)
