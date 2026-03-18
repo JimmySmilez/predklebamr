@@ -71,7 +71,7 @@ This project was supported by:
 This project is open-source and available under the [MIT License](https://github.com/omicscodeathon/klebamrmod?tab=MIT-1-ov-file#readme).
 
 ## 📞Contact
-For questions, contributions, or collaborations, please open an [issue](https://github.com/omicscodeathon/klebamrmod/issues) or contact the project lead at [Abiola Babajide](https://github.com/3880132)
+For questions, contributions, or collaborations, please open an [issue](https://github.com/omicscodeathon/klebamrmod/issues) or contact the project lead at [Abiola Babajide](https://github.com/3880132) or the project co-lead at [James Mordecai](https://github.com/JimmySmilez)
 
 ## 👨‍👩‍👧‍👦Team
 1. [Abiola Babajide](https://github.com/3880132) - **Microbiology | Data Science** - *Writer (Manuscript, GitHub), AL & ML enthusiast* - **University of the Western Cape, South Africa**
