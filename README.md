@@ -25,30 +25,55 @@ The detailed description of the entire process of data acquisition, training and
 ![image alt](https://github.com/omicscodeathon/klebamrmod/blob/main/workflow/klebAMRmod%20Workflow.png?raw=true)
 
 ## 🚀Installation and Setup
-### 🔗Live Demo:  
+### 🔗Live Demo: [Access the Web-based Dashboard here](https://github.com/omicscodeathon/klebamrmod)  
 
-## Tools for this project
--	Programming language: Python, R and Bash
--	Anaconda libraries 
--	Writing tools: R-Studio and VScode, 
--	Command line interface: Bash or PowerShell on Windows
--	GitHub account
+## 🖥️How to Run the Tool (PredKlebAMR) locally
+**1. Clone the Repository**
+```bash
+git clone https://github.com/omicscodeathon/klebamrmod.git
+cd PredKlebAMR
+```
+**2. Create the Conda Environment**
+Ensure you have [Miniconda](https://www.anaconda.com/docs/getting-started/miniconda/main) installed.
+```bash
+conda env create -f environment.yml
+```
+**3. Run the Analysis**
+The master script handles environment activation, Kleborate execution, and dashboard launching:
+```bash
+chmod +x PredKlebAMR_app.sh
+./PredKlebAMR_app.sh
+```
+## 💻Usage
+1. When prompted by the script, enter the full path to your assembly file (e.g., `/home/user/data/isolate_01.fasta`).
+2. The script will perform genomic screening and save results to `kleb_output.txt/`.
+3. The dashboard will attempt to open automatically. If it does not, manually navigate to:
+     **URL:** `http://127.0.0.1:8888`
 
-## Scripts for Analysis
+## 🛠️Technical Requirements 
+- **OS:** Linux (Ubuntu recommended), macOS, or Windows (via WSL2).
+- **Dependencies:** R (>= 4.3.1), Python (3.9), Kleborate (3.2.4), Ranger, Shiny, Tidyverse.
+- **Browser:** Modern browser (Chrome, Firefox, or Edge). For WSL2 users, wslu is recommended for automatic browser launching.
 
-## Acknowledgement
+## 📚Citations
+If you use this tool, please acknowledge the foundational resources:
+- **BV-BRC:** Olson RD, et al. (2023). "BV-BRC: The Bacterial and Viral Bioinformatics Resource Center." Nucleic Acids Research, 51(D1).
+- **Kleborate:** Lam MMC, et al. (2021). "A genomic surveillance framework and tool for Klebsiella pneumoniae and its complex." Nature Communications, 12(1).
+- **Ranger:** Wright MN, Ziegler A. (2017). "ranger: A Fast Implementation of Random Forests." Journal of Statistical Software, 77(1).
+
+## 🤝Acknowledgement
 This project was supported by:
 - Institute for Genomic Medicine Research (IGMR) https://www.igmr.org
 - African Society for Bioinformatics and Computational Biology (ASBCB) https://www.asbcb.org
 - National Institutes of Health (NIH) Office of Data Science Strategy (ODSS) https://datascience.nih.gov/about/odss 
 
-## License
+## ⚖️License
 This project is open-source and available under the [MIT License](https://github.com/omicscodeathon/klebamrmod?tab=MIT-1-ov-file#readme).
 
-## Contact
+## 📞Contact
 For questions, contributions, or collaborations, please open an [issue](https://github.com/omicscodeathon/klebamrmod/issues) or contact the project lead at [Abiola Babajide](https://github.com/3880132)
 
-## Team
+## 👨‍👩‍👧‍👦Team
 1. [Abiola Babajide](https://github.com/3880132) - **Microbiology | Data Science** - *Writer (Manuscript, GitHub), AI & ML, SQL, PowerBI* - **University of the Western Cape, South Africa**
 2. [James Mordecai](https://github.com/JimmySmilez) - **Microbiology | Bioinformatics** - *Microbial Bioinformatician, Bash scripter, Statistical (R) analyst, Bio-illustrator, Writer* - **King Fahd University of Petroleum and Minerals (KFUPM), Saudi Arabia**
 3. [Jamilu Garba](https://github.com/Jamilu192) - **Microbiology | Vetinary Microbiology** - *Writer (Manuscript)* - **Usmanu Danfodiyo University, Nigeria**
