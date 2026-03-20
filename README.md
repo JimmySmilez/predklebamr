@@ -78,8 +78,7 @@ For questions, contributions, or collaborations, please open an [issue](https://
 2. [James Mordecai](https://github.com/JimmySmilez) - **Microbiology | Bioinformatics** - *Microbial Bioinformatician, Bash scripter, Statistical (R) analyst, Bio-illustrator, Writer* - **King Fahd University of Petroleum and Minerals (KFUPM), Saudi Arabia**
 3. [Jamilu Garba](https://github.com/Jamilu192) - **Microbiology | Vetinary Microbiology** - *Writer (Manuscript)* - **Usmanu Danfodiyo University, Nigeria**
 4. [Kweku Gyasi](https://github.com/KwekuFohGyasi) - **Biochemistry** - **Kwame Nkrumah University of Science and Technology, Ghana**
-5. [Maryam Iqbal](https://github.com/maryamzafar1462-maker) - **Biotechnology | Computational Vaccine Design** - **Lahore College for Women University, Pakistan**
-6. [Serge Sougue](https://github.com/Sessou23) - **Molecular Biology | Molecular Genetics | Microbiology** - **Joseph KI-ZERBO University, Ouagadougou, Burkina Faso**
-7. [Olaitan I. Awe](https://github.com/laitanawe) - *Member* - **Institute of Genomic Medical Research (IGMR), United States**
+5. [Serge Sougue](https://github.com/Sessou23) - **Molecular Biology | Molecular Genetics | Microbiology** - **Joseph KI-ZERBO University, Ouagadougou, Burkina Faso**
+6. [Olaitan I. Awe](https://github.com/laitanawe) - *Member* - **Institute of Genomic Medical Research (IGMR), United States**
 
 
