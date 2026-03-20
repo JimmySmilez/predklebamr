@@ -7,7 +7,7 @@
 The rise of antimicrobial resistance (AMR) in *Klebsiella pneumoniae*, especially to meropenem, poses a critical threat to public health globally. Researchers and healthcare practitioners are constantly on the move to combat AMR in infectious diseases especially those that have been listed as critical by WHO and are in the group of pathogens tagged ESKAPE (*Enterococcus faecium*, *Staphylococcus aureus*, *Klebsiella pneumoniae*, *Acinetobacter baumannii*, *Pseudomonas aeruginosa*, and *Enterobacter* species).
 
 ## 🧬PredKlebAMR: Klebsiella Phenotype Predictor 
-PredKlebAMR is a machine-learning-powered pipeline designed to predict carbapenem resistance phenotypes in *Klebsiella pneumoniae* using whole-genome sequencing (WGS) data. By integrating `Kleborate` for genomic screening and a `Random Forest (Ranger)` model for phenotypic inference, the tool provides rapid, evidence-based phenotypic inferences and a visual dashboard for genomic surveillance.
+PredKlebAMR is a machine-learning-powered pipeline designed to predict meropenem-resistant phenotypes in *Klebsiella pneumoniae* using whole-genome sequencing (WGS) data. By integrating `Kleborate` for genomic screening and a `Random Forest (Ranger)` model for phenotypic inference, the tool provides rapid, evidence-based phenotypic inferences and a visual dashboard for genomic surveillance.
 
 ### ✨Features
 - **Automated Pipeline:** Single-script execution from raw FASTA file to phenotypic prediction.
@@ -22,6 +22,7 @@ The underlying model was trained using a high-quality dataset of *Klebsiella pne
 
 ## 🧾Workflow (Methodology)
 The detailed description of the entire process of data acquisition, training and testing of the model is presented in the workflow below:
+
 ![image alt](https://github.com/omicscodeathon/klebamrmod/blob/43307673af8df68ebf2e8ec1d96da7a2da7e2528/workflow/PredKlebAMR%20Workflow.jpeg) 
 
 ## 🚀Installation and Setup
