@@ -22,7 +22,7 @@ The underlying model was trained using a high-quality dataset of *Klebsiella pne
 
 ## 🧾Workflow (Methodology)
 The detailed description of the entire process of data acquisition, training and testing of the model is presented in the workflow below:
-![image alt](https://github.com/omicscodeathon/klebamrmod/blob/main/workflow/klebAMRmod%20Workflow.png?raw=true)
+![image alt](https://github.com/omicscodeathon/klebamrmod/blob/43307673af8df68ebf2e8ec1d96da7a2da7e2528/workflow/PredKlebAMR%20Workflow.jpeg) 
 
 ## 🚀Installation and Setup
 ### 🔗Live Demo: [Access the Web-based Dashboard here](https://github.com/omicscodeathon/klebamrmod)  
