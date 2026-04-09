@@ -11,7 +11,7 @@ PredKlebAMR is a machine-learning-powered pipeline designed to predict meropenem
 
 ### ✨Features
 - **Automated Pipeline:** Single-script execution from raw FASTA file to phenotypic prediction.
-- **ML-Driven Inference:** Uses a Random Forest model trained on 117 features to predict resistance with high confidence.
+- **ML-Driven Inference:** Uses a Random Forest model trained on 38 features to predict resistance with high confidence.
 - **Interactive Dashboard:** A Shiny-based web interface for visualizing MLST, resistance genes, and OMP mutations.
 - **Reproducible Environment:** Conda-based dependency management ensures the tool runs identically on any system.
 
