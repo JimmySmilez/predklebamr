@@ -6,7 +6,7 @@ channels:
 dependencies:
   - python=3.9
   - kleborate=3.2.4
-  - r-base=4.3.1
+  - r-base
   - r-tidyverse
   - r-shiny
   - r-bslib
