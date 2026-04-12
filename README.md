@@ -17,9 +17,13 @@ PredKlebAMR is a machine-learning-powered pipeline designed to predict meropenem
 - **Reproducible Environment:** Conda-based dependency management ensures the tool runs identically on any system.
 
 ## 🚀Installation and Setup
+PredKlebAMR offers users two (2) options:
+1. A Web-based Dashboard, where users simply click and upload their genomic files.
+2. A Command-line interface, where users can run the tool locally on their PCs. 
 
 ## 🔗Web-based Version: 
 ### [Access the Web-based Dashboard here](https://jimmysmilez-predklebamr.hf.space)  
+
 
 ## 🖥️How to Run the Tool (PredKlebAMR) locally
 **1. Clone the Repository**
