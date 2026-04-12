@@ -10,13 +10,16 @@ The rise of antimicrobial resistance (AMR) in *Klebsiella pneumoniae*, especiall
 PredKlebAMR is a machine-learning-powered pipeline designed to predict meropenem-resistant phenotypes in *Klebsiella pneumoniae* using whole-genome sequencing (WGS) data. By integrating `Kleborate` for genomic screening and a `Random Forest (Ranger)` model for phenotypic inference, the tool provides rapid, evidence-based phenotypic inferences and a visual dashboard for genomic surveillance.
 
 ### ✨Features
-- **Automated Pipeline:** Single-script execution from raw FASTA file to phenotypic prediction.
+- **Ease of Use:** The web-based version of the tool has an intuitive and user-friendly interface.
+- **Automated Pipeline:** The CL-version utilizes a single-script execution from raw FASTA file to phenotypic prediction.
 - **ML-Driven Inference:** Uses a Random Forest model trained on 38 features to predict resistance with high confidence.
 - **Interactive Dashboard:** A Shiny-based web interface for visualizing MLST, resistance genes, and OMP mutations.
 - **Reproducible Environment:** Conda-based dependency management ensures the tool runs identically on any system.
 
 ## 🚀Installation and Setup
-### 🔗Live Demo: [Access the Web-based Dashboard here](https://github.com/omicscodeathon/klebamrmod)  
+
+## 🔗Web-based Version: 
+### [Access the Web-based Dashboard here](https://jimmysmilez-predklebamr.hf.space)  
 
 ## 🖥️How to Run the Tool (PredKlebAMR) locally
 **1. Clone the Repository**
