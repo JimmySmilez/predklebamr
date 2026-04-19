@@ -87,9 +87,9 @@ For questions, contributions, or collaborations, please open an [issue](https://
 ## 👨‍👩‍👧‍👦Team
 1. [Abiola Babajide](https://github.com/3880132) - **Microbiology | Data Science** - *Writer (Manuscript, GitHub), AL & ML enthusiast* - **University of the Western Cape, South Africa**
 2. [James Mordecai](https://github.com/JimmySmilez) - **Microbiology | Bioinformatics** - *Microbial Bioinformatician, Bash scripter, Statistical (R) analyst, Bio-illustrator, Writer* - **King Fahd University of Petroleum and Minerals (KFUPM), Saudi Arabia**
-3. [Kweku Gyasi](https://github.com/KwekuFohGyasi) - **Biochemistry** - **Kwame Nkrumah University of Science and Technology, Ghana**
-4. [Jamilu Garba](https://github.com/Jamilu192) - **Microbiology | Vetinary Microbiology** - *Writer (Manuscript)* - **Usmanu Danfodiyo University, Nigeria**
-5. [Serge Sougue](https://github.com/Sessou23) - **Molecular Biology | Molecular Genetics | Microbiology** - **Joseph KI-ZERBO University, Ouagadougou, Burkina Faso**
+3. [Kweku Gyasi](https://github.com/KwekuFohGyasi) - **Biochemistry** - *Writer (Manuscript), Bio-illustrator* - **Kwame Nkrumah University of Science and Technology, Ghana**
+4. [Jamilu Garba](https://github.com/Jamilu192) - **Microbiology | Vetinary Microbiology** - *Member* - **Usmanu Danfodiyo University, Nigeria**
+5. [Serge Sougue](https://github.com/Sessou23) - **Molecular Biology | Molecular Genetics | Microbiology** - *Member* - **Joseph KI-ZERBO University, Ouagadougou, Burkina Faso**
 6. [Olaitan I. Awe](https://github.com/laitanawe) - *Member* - **Institute of Genomic Medical Research (IGMR), United States**
 
 
