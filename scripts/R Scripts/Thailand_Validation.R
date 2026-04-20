@@ -43,7 +43,7 @@ for(f in target_features) {
   }
 }
 
-# The fix: Add genome_id and ensure it's treated as a factor if the model expects it
+# Add genome_id and ensure it's treated as a factor 
 processed_data <- template %>%
   mutate(genome_id = as.character(model_ready$genome_id)) %>% 
   mutate(across(everything(), ~str_replace_all(., "[[:punct:]]", "_"))) %>%
@@ -60,7 +60,7 @@ probs <- predict(final_aggressive_model, processed_data, type = "prob")
 
 
 
-# --- 1. SET THE 'RESFINDER-KILLER' THRESHOLD ---
+# --- 1. SET THE THRESHOLD ---
 target_threshold <- 0.3
 
 # --- 2. GENERATE PREDICTIONS ---
@@ -94,11 +94,11 @@ print(head(final_results, 10))
 #---------------------------------------------------------------------------------------------------
 # Interpretation
 #---------------------------------------------------------------------------------------------------
-# 1. Load metadata and FORCE genome_id to character immediately
+# 1. Load metadata and force genome_id to character immediately
 metadata <- read_csv("Thailand_final_metadata.csv")%>% 
   rename("genome_id" = "Assembly") %>% 
   rename("resistant_phenotype" = "Meropenem") %>% 
-mutate(genome_id = as.character(genome_id))%>% # <--- THE FIX
+mutate(genome_id = as.character(genome_id))%>% 
   select(genome_id, Actual = resistant_phenotype)
 
 # 2. Ensure AI results are also character (just to be 100% safe)
@@ -138,8 +138,8 @@ discrepancies <- audit_data %>%
   filter(Predicted_Phenotype != Actual)
 
 # Save the full audit and the specific discrepancies
-write_csv(audit_data, "African_Complete_Validation_Audit.csv")
-write_csv(discrepancies, "African_Model_Discrepancies_To_Check.csv")
+write_csv(audit_data, "Thailand_Complete_Validation_Audit.csv")
+write_csv(discrepancies, "Thailand_Model_Discrepancies_To_Check.csv")
 
 print(paste("Audit complete. Inspect 'Model_Discrepancies_To_Check.csv' to find the", 
             nrow(discrepancies), "mismatches."))
@@ -187,8 +187,8 @@ ggplot(conf_matrix_df, aes(x = Reference, y = Prediction, fill = Freq)) +
   scale_fill_gradient(low = "#eff3ff", high = "#08519c") +
   geom_text(aes(label = Freq), size = 10, fontface = "bold") +
   theme_minimal() +
-  labs(title = "PredKlebAMR Predictions: African Cohort",
-       subtitle = paste("N = 88 | Accuracy:", round(performance$overall['Accuracy']*100, 1), "%"),
+  labs(title = "PredKlebAMR Predictions: Thailand Cohort",
+       subtitle = paste("N = 266 | Accuracy:", round(performance$overall['Accuracy']*100, 1), "%"),
        x = "Actual (Lab Result)",
        y = "Predicted (PredKlebAMR)") +
   theme(axis.text = element_text(size = 12, face = "bold"),
