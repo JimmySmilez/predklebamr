@@ -43,7 +43,7 @@ for(f in target_features) {
   }
 }
 
-# The fix: Add genome_id and ensure it's treated as a factor if the model expects it
+# Add genome_id and ensure it's treated as a factor 
 processed_data <- template %>%
   mutate(genome_id = as.character(model_ready$genome_id)) %>% 
   mutate(across(everything(), ~str_replace_all(., "[[:punct:]]", "_"))) %>%
@@ -60,11 +60,10 @@ probs <- predict(final_aggressive_model, processed_data, type = "prob")
 
 
 
-# --- 1. SET THE 'RESFINDER-KILLER' THRESHOLD ---
+# --- 1. SET THE THRESHOLD ---
 target_threshold <- 0.3
 
 # --- 2. GENERATE PREDICTIONS ---
-# We calculate the class based on the threshold manually
 final_preds <- ifelse(probs$.pred_Resistant >= target_threshold, 
                       "Resistant", "Susceptible")
 
@@ -89,9 +88,9 @@ print(head(final_results, 10))
 #---------------------------------------------------------------------------------------------------
 # Interpretation
 #---------------------------------------------------------------------------------------------------
-# 1. Load metadata and FORCE genome_id to character immediately
+# 1. Load metadata and force genome_id to character immediately
 metadata <- read_csv("African_metadata.csv") %>%
-  mutate(genome_id = as.character(genome_id))%>% # <--- THE FIX
+  mutate(genome_id = as.character(genome_id))%>% 
   select(genome_id, Actual = resistant_phenotype)
 
 # 2. Ensure AI results are also character (just to be 100% safe)
@@ -117,7 +116,7 @@ performance <- confusionMatrix(audit_data$Predicted_Phenotype,
                                audit_data$Actual, 
                                positive = "Resistant")
 
-# 5. Print the "Paper-Ready" Results
+# 5. Print the Results
 print("--- FINAL VALIDATION METRICS ---")
 print(performance$table)
 cat("\nOverall Accuracy: ", round(performance$overall["Accuracy"] * 100, 2), "%\n")
@@ -187,38 +186,6 @@ ggplot(conf_matrix_df, aes(x = Reference, y = Prediction, fill = Freq)) +
   theme(axis.text = element_text(size = 12, face = "bold"),
         plot.title = element_text(size = 16, face = "bold"))
 
-
-
-
-
-#---------------------------------------------------------------------------------------------------
-#Managing Discrepancies
-#---------------------------------------------------------------------------------------------------
-# 1. Identify the 9 Discrepancies
-discrepancies_list <- audit_data %>%
-  filter(Predicted_Phenotype != Actual) %>%
-  pull(genome_id)
-
-# 2. Extract the key genomic markers for these specific isolates
-# We go back to model_ready because it has the original Kleborate data
-mismatch_profiles <- model_ready %>%
-  filter(genome_id %in% discrepancies_list) %>%
-  select(genome_id, 
-         ST, 
-         contains("Carb"), 
-         contains("ESBL"), 
-         contains("Omp"), 
-         resistance_score) %>%
-  # Join with the audit data to see what the AI vs Lab said
-  left_join(audit_data, by = "genome_id") %>%
-  select(genome_id, ST, Actual, Predicted_Phenotype, everything())
-
-# 3. Print a summary to the console
-print("--- GENOMIC PROFILES OF MISMATCHED ISOLATES ---")
-print(mismatch_profiles)
-
-# 4. Save for your report
-write_csv(mismatch_profiles, "African_Genomic_Analysis_of_Mismatches.csv")
 
 
 
