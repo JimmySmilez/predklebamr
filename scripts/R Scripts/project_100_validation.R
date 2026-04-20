@@ -43,7 +43,7 @@ for(f in target_features) {
   }
 }
 
-# The fix: Add genome_id and ensure it's treated as a factor if the model expects it
+# Add genome_id and ensure it's treated as a factor if the model expects it
 processed_data <- template %>%
   mutate(genome_id = as.character(model_ready$genome_id)) %>% 
   mutate(across(everything(), ~str_replace_all(., "[[:punct:]]", "_"))) %>%
@@ -59,7 +59,7 @@ processed_data <- processed_data %>%
 probs <- predict(final_aggressive_model, processed_data, type = "prob")
 
 
-# --- 1. SET THE 'RESFINDER-KILLER' THRESHOLD ---
+# --- 1. SET THE THRESHOLD ---
 target_threshold <- 0.3
 
 # --- 2. GENERATE PREDICTIONS ---
@@ -90,9 +90,9 @@ print(head(final_results, 10))
 #---------------------------------------------------------------------------------------------------
 # Interpretation
 #---------------------------------------------------------------------------------------------------
-# 1. Load metadata and FORCE genome_id to character immediately
+# 1. Load metadata and force genome_id to character immediately
 metadata <- read_csv("project_100.csv") %>%
-  mutate(genome_id = as.character(genome_id))%>% # <--- THE FIX
+  mutate(genome_id = as.character(genome_id))%>% 
   select(genome_id, Actual = resistant_phenotype)
 
 # 2. Ensure AI results are also character (just to be 100% safe)
