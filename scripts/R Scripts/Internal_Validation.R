@@ -42,7 +42,7 @@ for(f in target_features) {
   }
 }
 
-# The fix: Add genome_id and ensure it's treated as a factor if the model expects it
+# Add genome_id and ensure it's treated as a factor 
 processed_data <- template %>%
   mutate(genome_id = as.character(model_ready$genome_id)) %>% 
   mutate(across(everything(), ~str_replace_all(., "[[:punct:]]", "_"))) %>%
@@ -86,7 +86,7 @@ if(all(target_features %in% colnames(processed_data))) {
 #---------------------------------------------------------------------------------------------------
 # 1. Load metadata and FORCE genome_id to character immediately
 metadata <- read_csv("metadata_validation_internal_100.csv") %>%
-  mutate(genome_id = as.character(genome_id)) %>% # <--- THE FIX
+  mutate(genome_id = as.character(genome_id)) %>% 
   select(genome_id, Actual = resistant_phenotype)
 
 # 2. Ensure AI results are also character (just to be 100% safe)
@@ -152,7 +152,7 @@ metrics_df <- data.frame(
 # 3. Combine them and export
 final_output <- bind_rows(confusion_df, metrics_df)
 
-write_csv(final_output, "Final_African_Validation_Results.csv")
+write_csv(final_output, "Final_Validation_Results.csv")
 
 print("Results consolidated and saved to Final_Validation_Results.csv")
 
