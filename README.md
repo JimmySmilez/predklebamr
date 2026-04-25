@@ -82,11 +82,11 @@ This project was supported by:
 This project is open-source and available under the [MIT License](https://github.com/omicscodeathon/klebamrmod?tab=MIT-1-ov-file#readme).
 
 ## 📞Contact
-For questions, contributions, or collaborations, please open an [issue](https://github.com/omicscodeathon/klebamrmod/issues) or contact the project lead at [Abiola Babajide](https://github.com/3880132) or the project co-lead at [James Mordecai](https://github.com/JimmySmilez)
+For questions, contributions, or collaborations, please open an [issue](https://github.com/omicscodeathon/klebamrmod/issues) 
 
 ## 👨‍👩‍👧‍👦Team
-1. [Abiola Babajide](https://github.com/3880132) - **Microbiology | Data Science** - *Writer (Manuscript, GitHub), AL & ML enthusiast* - **University of the Western Cape, South Africa**
-2. [James Mordecai](https://github.com/JimmySmilez) - **Microbiology | Bioinformatics** - *Microbial Bioinformatician, Bash scripter, Statistical (R) analyst, Bio-illustrator, Writer* - **King Fahd University of Petroleum and Minerals (KFUPM), Saudi Arabia**
+1. [James Mordecai](https://github.com/JimmySmilez) - **Microbiology | Bioinformatics** - *Microbial Bioinformatician, Bash scripter, Statistical (R) analyst, Bio-illustrator, Writer* - **King Fahd University of Petroleum and Minerals (KFUPM), Saudi Arabia**
+2. [Abiola Babajide](https://github.com/3880132) - **Microbiology | Data Science** - *Writer (Manuscript, GitHub), AL & ML enthusiast* - **University of the Western Cape, South Africa**
 3. [Kweku Gyasi](https://github.com/KwekuFohGyasi) - **Biochemistry** - *Writer (Manuscript), Bio-illustrator* - **Kwame Nkrumah University of Science and Technology, Ghana**
 4. [Jamilu Garba](https://github.com/Jamilu192) - **Microbiology | Vetinary Microbiology** - *Member* - **Usmanu Danfodiyo University, Nigeria**
 5. [Serge Sougue](https://github.com/Sessou23) - **Molecular Biology | Molecular Genetics | Microbiology** - *Member* - **Joseph KI-ZERBO University, Ouagadougou, Burkina Faso**
