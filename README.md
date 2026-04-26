@@ -55,20 +55,10 @@ chmod +x PredKlebAMR_app.sh
  
 
 ## 📊Data Source and Training
-The underlying model was trained using a high-quality dataset of *Klebsiella pneumoniae* isolates retrieved from the Bacterial and Viral Bioinformatics Resource Center (BV-BRC).
-- **Isolates:** Selected based on matched WGS data and AST results for Meropenem. Details of these selected isolates and how they were selected can be found here [Data Acquisition Workflow](https://github.com/omicscodeathon/klebamrmod/blob/f723ec6439fbd17c92fb20077ffa4082eefc7063/data/Data%20Acquisition%20Flowchart.png),    [Metadata](https://github.com/omicscodeathon/klebamrmod/blob/bd94105f426780a09c5a1eaa4d7954c5a0c7631a/data/metadata_final_6000.csv).
-- **Features:** The model analyzes 117 genomic markers including MLST, acquired carbapenemases (blaKPC, blaNDM, etc.), and porin alterations (OmpK35/36), as annotated by `Kleborate`. [Kleborate Workflow](https://github.com/omicscodeathon/klebamrmod/blob/30483d0a2ae947793bbf7ccf191873f02ffdcf70/data/Galaxy-Workflow-PredKlebAMR_Kleborate_Workflow_v1.ga)
-
-## 🧾Workflow (Methodology)
-The detailed description of the entire process of data acquisition, training and testing of the model is presented in the workflow below:
-
-
-![image alt](https://github.com/omicscodeathon/klebamrmod/blob/43307673af8df68ebf2e8ec1d96da7a2da7e2528/workflow/PredKlebAMR%20Workflow.jpeg) 
-
+The underlying model was trained using a high-quality dataset of *Klebsiella pneumoniae* isolates retrieved from the Bacterial and Viral Bioinformatics Resource Center (BV-BRC). The model analyzes 38 genomic markers including MLST, acquired carbapenemases (blaKPC, blaNDM, etc.), and porin alterations (OmpK35/36), as annotated by `Kleborate`. 
 
 ## 📚Citations
 If you use this tool, please acknowledge the foundational resources:
-- **BV-BRC:** Olson RD, et al. (2023). "BV-BRC: The Bacterial and Viral Bioinformatics Resource Center." Nucleic Acids Research, 51(D1).
 - **Kleborate:** Lam MMC, et al. (2021). "A genomic surveillance framework and tool for Klebsiella pneumoniae and its complex." Nature Communications, 12(1).
 - **Ranger:** Wright MN, Ziegler A. (2017). "ranger: A Fast Implementation of Random Forests." Journal of Statistical Software, 77(1).
 
