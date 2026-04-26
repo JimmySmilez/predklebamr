@@ -28,7 +28,7 @@ PredKlebAMR offers users two (2) options:
 ## 🖥️How to Run the Tool (PredKlebAMR) locally
 **1. Clone the Repository**
 ```bash
-git clone https://github.com/omicscodeathon/klebamrmod.git
+git clone https://github.com/jimmySmilez/predklebamr.git
 cd PredKlebAMR
 ```
 **2. Create the Conda Environment**
